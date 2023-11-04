@@ -1,0 +1,141 @@
+section{
+    font-family: "Open sans";
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/prueba_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.form-container2{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    width: 500px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.control2 input{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background: none;
+    border: none;
+    border-bottom: 2px solid crimson;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 15px;
+    transition: .1s ease-out;
+}
+.control2 input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+    border-radius: 80px;
+    cursor: pointer;
+}
+.control2 input:focus{
+    outline: 1px solid crimson;
+    font-size: 18px;
+}
+select {
+    appearance: none;
+    padding: 8px 50px;
+    margin: 25px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+    border: 1px solid rgb(220, 20, 60);
+    background-color: rgb(220, 20, 60);
+    color: #ffffff;
+    font-size: 16px;
+}
+ 
+select:focus {
+    outline: none;
+}
+.control2 input[type="submit"]:hover{
+    opacity: 1;
+}
+.link2{
+    text-align: center;
+}
+.link2 a{
+    text-decoration: none;
+    color: #fff;
+    transition: opacity .3s ease;
+    font-size: 1.5em;
+}
+.link a:hover{
+    opacity: 1;
+}
+label{
+    font-size: 1.5em;
+    text-align: center;
+}
+.control2 input[type="checkbox"] {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+    cursor: pointer;
+}
+.control2 input[type="checkbox"]:checked {
+    color: #0fbf12;
+}
+/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design */
+@media (max-width: 300px) {
+    .form-container2 {
+        width: 90%; /* Ajusta el ancho del contenedor */
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translateX(-50%);
+        padding: 20px 10px; /* Ajusta el relleno */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+    h1 {
+        font-size: 2em; /* Ajusta el tamaño de fuente */
+    }
+    .control2 input,
+    .control2 select {
+        padding: 10px; /* Ajusta el relleno */
+        margin: 0.5em 0; /* Ajusta el margen */
+    }
+    .control2 input[type="submit"] {
+        font-size: 1em; /* Ajusta el tamaño de fuente */
+        padding: 8px; /* Ajusta el relleno */
+        border-radius: 15px;
+    }
+    select {
+        padding: 5px 30px; /* Ajusta el relleno y el margen */
+        font-size: 12px; /* Ajusta el tamaño de fuente */
+    }
+    .link2 a {
+        font-size: 1em; /* Ajusta el tamaño de fuente */
+    }
+
+    /* Ajusta la propiedad background-size para que la imagen se extienda hacia abajo y ocupe toda la pantalla */
+    section {
+        background-image: url('../img/prueba_4.jpg');
+        background-size: 100% 100%; /* Esto hará que la imagen de fondo ocupe toda la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+        background-attachment: fixed; /* Mantiene la imagen de fondo fija en su posición */
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+    }
+}
