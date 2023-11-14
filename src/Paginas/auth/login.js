@@ -21,7 +21,8 @@ const Login = () => {
             </form>
             <div className='link'>
                 <Link to={"/register"}>Registrarse</Link><br/>
-                <Link to={"/home"}>Admin</Link>
+                <Link to={"/home"}>Admin</Link><br/>
+                <Link to={"#"}>Cliente</Link>
             </div>
         </div>
     </section>

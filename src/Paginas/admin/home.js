@@ -12,10 +12,9 @@ const Home = () => {
   return (
     <div>
       <nav className='menu'>
-        <label className='logo'>Citas</label>
+        <label className='logo'>Nombre</label>
         <ul className={`menu_items ${menuOpen ? 'show' : ''}`}>
           <li className='active'><Link to={"#"}>Inicio</Link></li>
-          <li><Link to={"/citas"}>Citas</Link></li>
           <li><Link to={"#"}>Perfil</Link></li>
           <li><Link to={"/"}>Cerrar Sesion</Link></li>
         </ul>
@@ -23,6 +22,15 @@ const Home = () => {
   <FaBars />
 </span>
       </nav>
+      <div className='imagen'>
+      <img src="perfil.png" />
+      </div>
+      <div className='textW'>
+        Bienvenid@: Nombre
+      </div>
+      <div className='botonC'>
+        <Link to={"/citas"}>Citas</Link>
+      </div>
     </div>
   );
 }

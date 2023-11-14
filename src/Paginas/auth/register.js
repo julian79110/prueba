@@ -12,6 +12,10 @@ const Register = () => {
                     <input type='text' name='name' id='name'/>
                 </div>
                 <div className='control2'>
+                    <label>Numero De Documento</label>
+                    <input type='text' name='pass' id='pass'/>
+                </div>
+                <div className='control2'>
                     <select>
                       <optgroup label="Tipo Documento" disabled>
                       <option value="" selected hidden>Tipo De Documento</option>
@@ -20,10 +24,6 @@ const Register = () => {
                       <option>Cedula De Ciudadania</option>
                       <option>Pasaporte</option>
                     </select>
-                </div>
-                <div className='control2'>
-                    <label>Numero De Documento</label>
-                    <input type='text' name='pass' id='pass'/>
                 </div>
                 <div className='control2'>
                     <input type='submit' value='Registrarse'/>
